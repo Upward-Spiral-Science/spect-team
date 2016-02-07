@@ -45,7 +45,7 @@ We can extract a label (symptom or certain conclusion) for each patient record, 
 - Can we build a classifier h to predict diseases given a feature vector that maps on to a patient record X<sub>i</sub>?
 
 <p align="center">
-<img src="https://github.com/Upward-Spiral-Science/spect-team/tree/master/Draft/equation.png" width="300" height="65"/>
+<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/Draft/equation.png" width="300" height="65"/>
 </p>
 
 - Can this classifier be used to predict the degree of unhealthiness? Or the nature of the disorder (eg: ADHD)?
