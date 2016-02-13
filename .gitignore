@@ -56,4 +56,7 @@ docs/_build/
 # PyBuilder
 target/
 
+# IPython 1.0 creates intermediate checkpoints
+.ipynb_checkpoints
+
 .DS_Store
