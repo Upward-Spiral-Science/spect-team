@@ -43,12 +43,14 @@ if __name__ == '__main__':
 
     # Find the splitting point
     featNames = list(df.columns.get_values()) 
+    split_point0 = featNames.index('Adjustment_Disorder')
     split_point1 = featNames.index('BSC_Respondent')
-    split_point2 = featNames.index('LDS_79')
+    split_point2 = featNames.index('Baseline_header_id')
     
-    df1 = split_data(clean_df, 0, split_point1, 'patient_info.csv') # patient information
-    df2 = split_data(clean_df, split_point1, split_point2+1, 'unknown.csv') # unknown measurements
-    df3 = split_data(clean_df, split_point2+1, m, 'base_concen.csv') #  baseline-concentration 
+    df0 = split_data(clean_df, 0, split_point0, 'patient_info.csv') # patient information
+    df1 = split_data(clean_df, split_point0, split_point1, 'disorders.csv') # disorders
+    df2 = split_data(clean_df, split_point1, split_point2, 'unknown.csv') # unknown measurements
+    df3 = split_data(clean_df, split_point2, m, 'base_concen.csv') #  baseline-concentration 
     
     # Separate baseline and concentration columns
     base_heads, concen_heads = ['Patient_ID'], []
