@@ -1,6 +1,6 @@
 ## Questions About Our Project
 
-Srinivas Suresh， Yating Jing
+Srinivas Suresh, Yating Jing, Katie Ross
 
 
 ### Assumptions and Notations
@@ -31,11 +31,37 @@ We can extract a label (symptom or certain conclusion) for each patient record, 
 ### Inferential
 
 - Can we learn the distribution of the features?
+	
+	*H<sub>A</sub> : x ~ N (μ, σ2) (assume Gaussian)*
+
+	
+	*H<sub>0</sub> : The density function f(x) cannot be identified.*
+
 - Should we divide the features into groups and analyze their distributions separately?
+  
+  	*H<sub>A</sub> : The features can be clustered.*
+  		
+	*H<sub>0</sub> : The features cannot be clustered.*
+
 - What degree of independence can we assume?
+	
+	*H<sub>A</sub> : P(x<sub>ij</sub>x<sub>ik</sub>) = P(x<sub>ij</sub>)P(x<sub>ij</sub>), j <> k, i = 1,...,n*
+	
+	*H<sub>0</sub> : P(x<sub>ij</sub>x<sub>ik</sub>) <> P(x<sub>ij</sub>)P(x<sub>ij</sub>), j <> k, i = 1,...,n*
+
 - Can we reduce the dimensionality of each record X<sub>i</sub> (reduce m)? 
 	- Can we find k most important features to construct our training data, where k is significantly smaller than m?
+	
+		*H<sub>A</sub> : ∃ k ∈ ℕ : k ≪ m*
+	
+		*H<sub>0</sub> : { ∃! k ∈ ℕ } ∪ { ∃ k ∈ ℕ : k ≈ m }*
+	
 - Can we identify features that correlate with incidence of mental illness in some samples but not in others?
+
+	*H<sub>A</sub> : There exists features that correlate with incidence of mental illness in some samples.*
+	
+	*H<sub>0</sub> : The features do not correlate with illness incidence in any subset of our samples.*
+
 	
 
 ### Predictive

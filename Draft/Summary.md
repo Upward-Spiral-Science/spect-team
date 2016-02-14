@@ -1,11 +1,11 @@
 ## Insights from SPECT Imaging
 
-Srinivas Suresh, Yating Jing
+Srinivas Suresh, Yating Jing, Katie Ross
 
 
 ### Opportunity
 
-SPECT imaging is an invaluable new tool for psychiatry and medical assessment of mental illness that would enable psychiatrists to give a more precise diagnosis about what mental conditions a patient suffers from and recommend the best treatment<sup>\[1\]</sup>
+SPECT imaging is an invaluable new tool for psychiatry and medical assessment of mental illness that would enable psychiatrists to give a more precise diagnosis about what mental conditions a patient suffers from and recommend the best treatment<sup>\[1\]</sup>.
 
 SPECT has clinical value in the diagnosis, therapeutic management, and follow-up of patients. The diversity of central nervous system diseases and the still incomplete knowledge of the mechanisms that underlie them have contributed to the success of brain perfusion SPECT as a research tool in neurosciences<sup>[2]</sup>.
 
