@@ -21,12 +21,17 @@ We can extract a label (symptom or certain conclusion) for each patient record, 
 
 ### Exploratory
 
-- What is the mean, maximum and minimum for the various numerical features? Also how do these features scale?
+- What is the mean, maximum and minimum for the various numerical features? Also how do these features scale?- 
 - What is the range of values nominal features can take?
 - Are the features correlated? 
 - What is the sole metric that can be used to separate healthy people from unhealthy people?
 - Are we able to identify outliers at this point?
- 
+
+- Should we divide the features into groups and analyze their distributions separately?
+	
+- Can we reduce the dimensionality of each record X<sub>i</sub> (reduce m)? 
+	- Can we find k most important features to construct our training data, where k is significantly smaller than m?
+
 
 ### Inferential
 
@@ -37,24 +42,11 @@ We can extract a label (symptom or certain conclusion) for each patient record, 
 	
 	*H<sub>0</sub> : The density function f(x) cannot be identified.*
 
-- Should we divide the features into groups and analyze their distributions separately?
-  
-  	*H<sub>A</sub> : The features can be clustered.*
-  		
-	*H<sub>0</sub> : The features cannot be clustered.*
-
 - What degree of independence can we assume?
 	
 	*H<sub>A</sub> : P(x<sub>ij</sub>x<sub>ik</sub>) = P(x<sub>ij</sub>)P(x<sub>ij</sub>), j <> k, i = 1,...,n*
 	
 	*H<sub>0</sub> : P(x<sub>ij</sub>x<sub>ik</sub>) <> P(x<sub>ij</sub>)P(x<sub>ij</sub>), j <> k, i = 1,...,n*
-
-- Can we reduce the dimensionality of each record X<sub>i</sub> (reduce m)? 
-	- Can we find k most important features to construct our training data, where k is significantly smaller than m?
-	
-		*H<sub>A</sub> : ∃ k ∈ ℕ : k ≪ m*
-	
-		*H<sub>0</sub> : { ∃! k ∈ ℕ } ∪ { ∃ k ∈ ℕ : k ≈ m }*
 	
 - Can we identify features that correlate with incidence of mental illness in some samples but not in others?
 
