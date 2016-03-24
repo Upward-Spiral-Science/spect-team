@@ -23,11 +23,20 @@
 
 
 #### Descriptive Analysis
+Our dataset consisted of approximately 7500 patient records and 754 features. However many patient records had missing or incomplete data. Once we dropped missing data and NaNs, our data was reduced to 2794 patient records. The features in the patient feature vectors can be broadly classified into 4 categories.
+1. Patient Info
+2. Disorder data
+3. Survey Responses
+3. RCBF values
 
 #### Exploratory Analysis
 
-<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/kmeans_all_samples.png" height="250" width="350" />
+<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/kmeans_all_samples.png" height="250" width="350" /><br/>
+Our initial exploratory analysis consisted of just determining standard statistical values of different columns like the mean, max and min to see if there any obvious red flags. We also wanted to know the answers to questions that define significant populations in our data, like who are "healthy" people and just how many of them are there or who are the different types of people who participated in this study.
 
+We found that there just about 50 healthy people out of the 7500 people who participated in the study. This is what we found
+
+![](Studydata.png)
 
 #### Inferential Analysis
 
@@ -48,7 +57,11 @@
 
 
 #### Testing Assumptions
+The notion of independence of sampling for a dataset such as ours is a bit kludgy. Samples might not be independent if they have similar RCBF patterns or have similar disease profiles. Therefore in a set of mixed but reduced features we could reliably determene sample independence by examining the rows of the matrix formed by patient record.
 
+By random sampling 27 patiensts around 1000 times and examining the rank of the matrix we can determine how many samples are not linearly independent of another sample. This can achieved by examining the rank of the matrix.
+
+We found that less than 5% of our samples were not sampled independently.
 
 
 #### Next Steps
@@ -67,10 +80,9 @@
 
 
 #### Descriptive Analysis
-
-
+While answering Descriptive questions we were primarily trying to find out more about what our data even is. Since there were so many features and and so many clobbered patient records we had to clean our data before we started answering these questions. 
 #### Exploratory Analysis
-
+Our exploratory analysis consisted of answering basic statistical questions about our data, this was invaluable in deciding what tests to use on our data and what paths to not explore when carrying out inferential and predictive analysis. 
 
 
 #### Inferential Analysis
