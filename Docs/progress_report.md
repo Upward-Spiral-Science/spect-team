@@ -33,17 +33,13 @@ Our dataset consisted of approximately 7500 patient records and 754 features. Ho
 
 Our initial exploratory analysis consisted of just determining standard statistical values of different columns like the mean, max and min to see if there any obvious red flags. We also wanted to know the answers to questions that define significant populations in our data, like who are "healthy" people and just how many of them are there or who are the different types of people who participated in this study.<br/>
 
-We found that there just about 50 healthy people out of the 7500 people who participated in the study. This is what we found<br/>
+We found that there just about 50 healthy people out of the 7500 people who participated in the study. This is what we found: <br/>
 
-![](Studydata.png)
+ <img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/Studydata.png" />
 
-Once this was complete we carried out more detailed exploratory analysis using K Means clustering and Principal Component Analysis.<br/>
-Our expeiments with K Means Clustering did not yield any conclusive results. Clustering with all the features made the distribution far too noisy. The silver lining however was that a few outlier were readily identified.<br/>
-<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/kmeans_all_samples.png" height="250" width="350" /><br/>
 
-To reduce the dimensionality we employed PCA. This led us to belive that most of the variance can be explained by 27 features, 14 by the first principal component, 14 by the second. This reduced dimensionality would greatly improve the ease with which we can perform rigorous Inferential and Predictive Analysis.
+<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/kmeans_all_samples.png" height="250" width="350" />
 
-![](PCA.png)
 
 #### Inferential Analysis
 
@@ -88,6 +84,7 @@ We found that less than 5% of our samples were not sampled independently.
 
 #### Descriptive Analysis
 While answering Descriptive questions we were primarily trying to find out more about what our data even is. Since there were so many features and and so many clobbered patient records we had to clean our data before we started answering these questions. Once our data was cleaned and in the shape we need it to be we carried out basic exploratory analysis
+
 #### Exploratory Analysis
 Our exploratory analysis consisted of answering basic statistical questions about our data, this was invaluable in deciding what tests to use on our data and what paths to not explore when carrying out inferential and predictive analysis. Or exploratory analysis also aimed to simplt the nature of data as to make more advanced analysis less tedious.
 
