@@ -30,10 +30,10 @@ Here we will discuss our analysis of this data, starting with exploratory and de
 
 Our dataset consisted of approximately 7500 patient records and 754 features. However many patient records had missing or incomplete data. Once we dropped missing data and NaNs, our data was reduced to 2794 patient records. The features in the patient feature vectors can be broadly classified into four subjects:
 
-1. Patient Infomation
+1. Patient Information
 2. Disorder diagnosis 
-3. "Learning Disability Screening" Questionnaire Responses
-3. Baseline and Concentration RCBF values 
+3. Questionnaire Responses
+3. Baseline and Concentration rCBF values 
 
 #### Exploratory Analysis
 
@@ -50,7 +50,7 @@ We clustered all the raw features using K-Means clustering, no clear cluster bou
 
 <img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/kmeans_all_samples.png" height="250" width="350" />
 
-We reduce the dimension of the features by subjects. Specifically, we ran PCA on RBF data and came up with 3 features that captures more than 99.9% variance. Then we ran Sparse PCA on disorder diagnosis and questionnaire data, reduce the number of features to 10 for both subjects. We kept four attributes for patient information. Therefore we end up with 27 features, which eliminates the dimensionality curse problem.
+We reduce the dimension of the features by subjects. Specifically, we ran PCA on rCBF data and came up with 3 features that captures more than 99.9% variance. Then we ran Sparse PCA on disorder diagnosis and questionnaire data, reduce the number of features to 10 for both subjects. We kept four attributes for patient information. Therefore we end up with 27 features, which eliminates the dimensionality curse problem.
 
 
 #### Inferential Analysis
