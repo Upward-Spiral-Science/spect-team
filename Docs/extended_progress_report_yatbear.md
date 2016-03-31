@@ -39,7 +39,7 @@ I ran PCA on baseline and concentration rCBF values separately and kept 3 featur
 
 I used Kolmogorov-Smirnov Goodness-of-Fit Test on all 20 features after dimensionality reduction to check if the ADHD features and Bipolar features are sampled from the same distribution. The figure below are the plotted power curves on the 20 features, marked with their corresponding p-values. 
 
-<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/extended_pwr_curves.png" width="300" />
+<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/extended_pwr_curves.png"/>
 
 As shown in the power curves above, ten features (with large p-values) obviously follow the null distribution. For those whose p-values are slightly smaller than the alpha power(0.05), it is hard to be tell whether the corresponding powers will eventually approximate 1.0 due to the lack of data, but we can still see the trend of increasing.
 
