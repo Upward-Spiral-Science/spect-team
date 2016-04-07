@@ -46,7 +46,7 @@ As shown in the power curves above, ten features (with large p-values) obviously
 
 ### Predictive Analysis
 
-I used 10-fold cross validation to train five different binary classifiers on the reduced features. The performances are listed below:
+I used 10-fold cross validation to train nine different binary classifiers on the reduced features. The performances are listed below:
 
 | Classifier | Accuracy | Standard Deviation |
 |------------|----------|--------------------|
