@@ -16,10 +16,10 @@ I decided to go with isomaps because they were faster and MDS did not offer any 
 6. Approach 2 so far has not yielded any positive results when I attempted to choose only the rCBF values corresponding to basal ganglia. 
 
 These Analysis can be found here<br/>
-1. [Analyis 1](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-9/Independent%20Analysis.ipynb)
-2. [Analysis 2](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-9/Independent%20Analysis-2.ipynb)
-3. [Analysis 3](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-9/Independent%20Analysis-3.ipynb)
-4. [Subject Selection Analysis](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-9/SubjectSelectionExperiments.ipynb)
+1. [Analyis 1](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-9/Independent%20Analysis.ipynb)<br/>
+2. [Analysis 2](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-9/Independent%20Analysis-2.ipynb)<br/>
+3. [Analysis 3](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-9/Independent%20Analysis-3.ipynb)<br/>
+4. [Subject Selection Analysis](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-9/SubjectSelectionExperiments.ipynb)<br/>
 
 Todo
 1. Look at feature selection algorithms and implement them
