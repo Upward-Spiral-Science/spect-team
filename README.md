@@ -12,4 +12,5 @@
 10. [Assignment-10](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-10/FeatureSelection_SubjectSelectionExperiments.ipynb)<br/>
 11. [Assignment-11](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-11/AdvancedFeatureSelection.ipynb)<br/>
 
-[Progress Report](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Docs/progress_report.md)
+[Interim Progress Report](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Docs/progress_report.md)
+[Final Report](https://github.com/Upward-Spiral-Science/spect-team/blob/master/final_report.md)
