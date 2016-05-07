@@ -28,11 +28,11 @@ May 6<sup>th</sup>, 2016
 ----------
 
 ### Overview
-Diagnosing a mental illness is difficult and often many illnesses are misdiagnosed causing further mental anguish to people with mental illness. SPECT -Single Photon Emission Computed Tomography provides a possible solution. By injecting a radioiotope into the brain's bloodstream, the diffusion patterns can help diagnose mental illness
+Diagnosing a mental illness is difficult and often many illnesses are misdiagnosed causing further mental anguish to people with mental illness. SPECT -Single Photon Emission Computed Tomography provides a possible solution. By injecting a radioiotope into the brain's bloodstream, the diffusion patterns can help diagnose mental illness.
 
 ### Scientific Questioning
 Here we will discuss our analysis of this data, starting with exploratory and descriptive analysis, up to preliminary work on hypothesis testing and classification. The questions posed and their outcomes are described sequentially, with code and methods used to answer them described at the end of this report.<br/>
-Our scientific questioning consisted of answering two questions<br/>
+Our scientific questioning consisted of answering two questions.<br/>
 
 1. Can Depressed people be separated from not non depressed people?
 2. Can ADHD patients be separated from people who have Bipolar disorder?
@@ -68,7 +68,7 @@ We found that there just about 50 healthy people out of the 7500 people who part
 
 We clustered all the raw features using K-Means clustering, no clear cluster boundaries showed up. But we are able to identify the existence of outliers, as shown in the figure below.
 
-<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/kmeans_all_samples.png" height="250" width="350" />
+<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/kmeans_all_samples.png" />
 
 We reduce the dimension of the features by subjects. Specifically, we ran PCA on rCBF data and came up with 3 features that captures more than 99.9% variance. Then we ran Sparse PCA on disorder diagnosis and questionnaire data, reduce the number of features to 10 for both subjects. We kept four attributes for patient information. Therefore we end up with 27 features, which eliminates the dimensionality curse problem.
 
@@ -93,11 +93,11 @@ No real clustering was apparent under any form of clustering technique we tried 
 
 We tried to find out if the features corresponding to depressed people and the features from people that do not have depression come from the same distribution. We use Kolmogorov-Smirnov Goodness-of-Fit Test on all 27 reduced features. The figure below is the plotted power curve on simulated data. 
 
-<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/inference_sim.png" width="300" />
+<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/inference_sim.png"/>
 
 ##### ADHD vs Bipolar
 
-We tried to corroborate existing literature about ADHD and Bipolar studies with SPECT and try to find out if we can infer the same findings from the SPECT data. Our experiments were by and large incoclusive.
+We tried to corroborate existing literature about ADHD and Bipolar studies with SPECT and try to find out if we can infer the same findings from the SPECT data. Our experiments were by and large inconclusive.
 
 
 #### Predictive Analysis
@@ -112,7 +112,7 @@ We used Leave-One-Out cross validation to train five different binary classifier
 |K Nearest Neighbors | 0.5594 | +/- 0.496 |
 |Support Vector Machine| 0.4882 | +/- 0.500 |
 |Random Forest| 0.9649| +/- 0.184 |
-|Quadratic Discriminant Analysis| 0.9624 | +/- 0.190|
+|Quadratic Discriminant Analysis| 0.9624 | +/- 0.190 |
 
 We got very satisfying accuracy using LR, Random Forest and QDA classifiers. Further evaluation is conducted in the Methods section below.
 
@@ -120,10 +120,10 @@ We got very satisfying accuracy using LR, Random Forest and QDA classifiers. Fur
 We again used Leave One Out Cross validation for some of our studies.
 But unfortunately most of the time our classifiers performed hardly better than chance when tested on only the rCBF data.
 
-We did however see phenomenal increases in classifier performance when including the disorder diagnosis booleans
+We did however see phenomenal increases in classifier performance when including the disorder diagnosis booleans.
 
 **Chance value is approximately 75%**<br/>
-*There is a little space above the second plot on purpose to not let the bar plots fill the whole graph*<br/>
+*There is a little space above the second plot on purpose to not let the bar plots fill the whole graph.*<br/>
 
 **Without including disorder booleans**<br/>
 <img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/Classifier_Sample1.png"/><br/>
@@ -151,7 +151,7 @@ We used Gaussian Mixture Model to test the identical assumption of the samples. 
   
        Depressed BIC       |     Not Depressed BIC
 :-------------------------:|:-------------------------:
-<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/BIC_depr.png" height="250" width="280" /> | <img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/BIC_not_depr.png" height="250" width="280" />
+<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/BIC_depr.png" width="280"/> | <img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/BIC_not_depr.png" width="280"/>
 
 From the two figures above, we can see that the optimal numbers of clusters are 16 and 15 (at least), so our data may not have been sampled identically from one distribution. Therefore our identical sample assumption is false.
 
@@ -181,7 +181,7 @@ We implemented the next steps we suggested in our project's interim report. Howe
 
 ##### ADHD vs Bipolar
 
-Our studies for ADHD vs Bipolar were a  set of independent experiments over 6 weeks
+Our studies for ADHD vs Bipolar were a  set of independent experiments over 6 weeks.
 
 | Question Type | Code |
 |---------------|------|
@@ -196,7 +196,7 @@ Our studies for ADHD vs Bipolar were a  set of independent experiments over 6 we
 
 #### Descriptive Analysis
 
-While answering Descriptive questions we were primarily trying to find out more about what our data even is. Since there were so many features and and so many clobbered patient records we had to clean our data before we started answering these questions. Once our data was cleaned and in the shape we need it to be we carried out basic exploratory analysis
+While answering Descriptive questions we were primarily trying to find out more about what our data even is. Since there were so many features and and so many clobbered patient records we had to clean our data before we started answering these questions. Once our data was cleaned and in the shape we need it to be we carried out basic exploratory analysis.
 
 
 #### Exploratory Analysis
@@ -229,11 +229,11 @@ For each of the 20 features, value p on top of the subfigure denotes the p-value
 
 #### Predictive Analysis
 
-#### Depressed vs Not Depressed
+##### Depressed vs Not Depressed
 
 Below we compared the performance of five different classifiers on simulated data, where eventually all five models achieve high prediction accuracy. Note that SVM has the highest standard deviation. 
 
-<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/clf_sim.png" height="250" width="450" />
+<img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/clf_sim.png"/>
 
 
 When applied on the real data, the best classification accuracy on the test set is about 96.53%, yielded by the LR classifier. Random Forest and QDA classifier also give satisfying results, as shown in the figure below.
@@ -248,9 +248,9 @@ For SVM, our data might be skewed, since it contains so much information, and ca
 
 ##### ADHD vs Bipolar
 
-Running analysis after separating the patient genders, we finally got the models that perform significantly better than chance, with LLE-QDA pipeline, see detailed analysis [here](see [here](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-10/GenderDistinguished_ADHD_Bipolar_Fix&Tune_YatingJing.ipynb). 
+Running analysis after separating the patient genders, we finally got the models that perform significantly better than chance, with LLE-QDA pipeline, see detailed analysis [here](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-10/GenderDistinguished_ADHD_Bipolar_Fix&Tune_YatingJing.ipynb). 
 
-We used 10-fold cross validation to train nine different binary classifiers on both PCA and LLE reduced features. Prediction on PCA features does no better than chance, whereas prediction using QDA on LLE features does much better than chance. 
+We used 10-fold cross validation to train eight different binary classifiers on both PCA and LLE reduced features. Prediction on PCA features does no better than chance, whereas prediction using QDA on LLE features does much better than chance. 
 
 The comparison of two different kinds of dimensionality reduction methods pipelined with various kinds of classification methods for both genders are visualized in the table of figures below.
 
@@ -259,35 +259,35 @@ The comparison of two different kinds of dimensionality reduction methods pipeli
 <img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/clf_g1_pca.png" width="350" /> | <img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/clf_g1_lle.png" width="350" />
 <img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/clf_g2_pca.png" width="350" /> | <img src="https://github.com/Upward-Spiral-Science/spect-team/blob/master/figs/clf_g2_lle.png" width="350" />
 
-Detailed classification performance for Gender 1 using LLE features (Chance for Gender 1 is 0.8078):
+Detailed classification performance for Gender 1 using LLE features is shown in the table below. While chance for Gender 1 disorder prediction is 0.8078, LLE-QDA pipeline yields an prediction accuracy of 0.9865 (+/-0.022).
 
 | Classifier for Gender 1 | Accuracy | Standard Deviation |
 |------------|----------|--------------------|
 | Logistic Regression | 0.8071 | +/- 0.386| 
 | Linear SVM | 0.8071 | +/- 0.386| 
 | SVM (RBF) | 0.8071 | +/- 0.386| 
-| <font color="red"> QDA </font>  | <font color="red"> 0.9865 </font> | +/- 0.022| 
+| **QDA**  | **0.9865** | +/- 0.022| 
 | Random Forest | 0.8056 | +/- 0.385| 
 | Gradient Boosting | 0.8048 | +/- 0.383| 
 | Extra Trees | 0.8063 | +/- 0.386| 
 | AdaBoost | 0.8040 | +/- 0.386| 
 
 
-Detailed classification performance for Gender 2 using LLE features (Chance for Gender 2 is 0.6719):
+Detailed classification performance for Gender 2 using LLE features is listed below. While chance for Gender 2 disorder prediction is 0.6719, LLE-QDA pipeline yields an prediction accuracy of 0.8609 (+/-0.3).
 
 | Classifier for Gender 2 | Accuracy | Standard Deviation |
 |------------|----------|--------------------|
 | Logistic Regression | 0.6696 | +/- 0.447| 
 | Linear SVM | 0.6696 | +/- 0.447| 
 | SVM (RBF) | 0.6696 | +/- 0.447| 
-| <font color="red"> QDA </font> | <font color="red"> 0.8609 </font> | +/- 0.300| 
+| **QDA** | **0.8609** | +/- 0.300| 
 | Random Forest | 0.6481 | +/- 0.376| 
 | Gradient Boosting | 0.5893 | +/- 0.369| 
 | Extra Trees | 0.6696 | +/- 0.447| 
 | AdaBoost | 0.5637 | +/- 0.340| 
 
 
-In the light of the performance above, we performed further analysis - using Grid Search method to select the best hyper parameters for LLE, SVM and Random Forest, see [here](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-11/GridSearch_YatingJing.ipynb).
+In the light of the better-than-chance performance above, we conducted further analysis - using Grid Search method to select the best hyper parameters for LLE, SVM and Random Forest, see [here](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-11/GridSearch_YatingJing.ipynb).
 
 The results are plotted below:
 
