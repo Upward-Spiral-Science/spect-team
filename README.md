@@ -1,4 +1,4 @@
-### Tabloe of Contents
+### Table of Contents
 
 1. [Assignment-1: Initial Questions](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Draft/Questions.md)
 2. [Assignment 2: Initial Descriptive Answers](https://github.com/Upward-Spiral-Science/spect-team/blob/master/Code/Assignment-3/Descriptive_Exploratory_Answers_1.ipynb)
